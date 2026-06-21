@@ -76,7 +76,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
         title: Text(widget.title),
       ),
-      body: Padding(
+      body: SingleChildScrollView(
+  child: Padding(
   padding: const EdgeInsets.all(16.0),       
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,// isso alinha os textos à esquerda, caso queira centralizar, use CrossAxisAlignment.center.          
@@ -140,9 +141,63 @@ class _MyHomePageState extends State<MyHomePage> {
 
               SizedBox(height: 20.0),
 
+              Text('🇺🇾 Culinaria 🇺🇾',
+              textAlign: TextAlign.left,
+               style: TextStyle(
+              fontSize: 24.0,
+              fontWeight: FontWeight.bold,
+              color: Color.fromARGB(255, 0, 0, 0)
+              ),
+              ),
+
+              Text('A gastronomia do Uruguai é uma das características mais marcantes da cultura do país. Conhecida pela excelente qualidade de suas carnes, ela tem como destaque o tradicional asado, uma forma de churrasco muito apreciada pelos uruguaios. Além das carnes, diversos pratos e bebidas fazem parte do cotidiano da população e atraem turistas de diferentes partes do mundo.',
+               style: TextStyle(
+                  fontSize: 16.0,
+                  color: Color.fromARGB(255, 0, 0, 0)
+                ),
+                
+              ),
+              SizedBox(height: 10.0),
+
+              Text('Entre as comidas típicas mais famosas está o chivito, um sanduíche criado na década de 1940 na cidade de Punta del Este. Sua receita tradicional leva carne bovina, alface, tomate e pão, mas pode incluir ingredientes como queijo, presunto, bacon, ovo e batata frita. Por ser bastante completo, é considerado uma refeição muito popular no país.',
+               style: TextStyle(
+                  fontSize: 16.0,
+                  color: Color.fromARGB(255, 0, 0, 0)
+                ),
+              ),
+
+              SizedBox(height: 10.0),
+
+
+              Text('Outra especialidade é o chajá, uma sobremesa originária da cidade de Paysandú. Ela é preparada com camadas de creme, merengue, pêssegos e, muitas vezes, doce de leite, ingrediente bastante presente na culinária uruguaia.',
+               style: TextStyle(
+                  fontSize: 16.0,
+                  color: Color.fromARGB(255, 0, 0, 0)
+                ),
+              ),
+
+              SizedBox(height: 10.0),
+
+              Text('Entre as bebidas, destacam-se o medio y medio, uma mistura de vinho branco seco com espumante doce, e o tradicional mate uruguaio. Mais do que uma simples bebida, o mate representa um importante símbolo cultural e social do Uruguai, sendo consumido diariamente e compartilhado entre amigos e familiares.',
+               style: TextStyle(
+                  fontSize: 16.0,
+                  color: Color.fromARGB(255, 0, 0, 0)
+                ),
+              ),
+
+              SizedBox(height: 10.0),
+
+              Text('Esses pratos e bebidas demonstram a riqueza da gastronomia uruguaia, que faz parte da identidade nacional e preserva tradições passadas de geração em geração.                          ',
+               style: TextStyle(
+                  fontSize: 16.0,
+                  color: Color.fromARGB(255, 0, 0, 0)
+                ),
+              ),
+
           ],
         ),
       ),
+),
       
       floatingActionButton: FloatingActionButton.extended(
   onPressed: () {
